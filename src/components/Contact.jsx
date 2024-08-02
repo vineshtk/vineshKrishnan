@@ -48,7 +48,7 @@ const Contact = () => {
               <p className="mt-2 text-gray-400">
                 Follow me on linkedin.
               </p>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="mt-2 text-blue-900">linkedin/vineshtk</a>
+              <a href="https://www.linkedin.com/in/vinesh-tk/" target="_blank" rel="noopener noreferrer" className="mt-2 text-blue-900">linkedin/vineshtk</a>
             </div>
           </div>
         </div>
