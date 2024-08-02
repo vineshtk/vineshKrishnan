@@ -1,20 +1,23 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
     return (
-        <div className='container mx-auto flex flex-col md:flex-row items-center bg-slate-900'>
-            <div className=' md:w-1/2 px-20  '>
-                <h1 className='text-5xl text-zinc-50 font-semibold '>Hi I'm Vinesh</h1>
+        <div className=' flex flex-row mx-auto bg-slate-900'>
+            <div className='mx-20'>
+                <h1 className='text-5xl  text-zinc-50 font-semibold my-2 '>Hi I'm Vinesh</h1>
                 <h3 className='text-xl text-lime-400 font-semibold '>An Aspiring Go Developer</h3>
-                <p className='text-zinc-50 '>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p className='text-zinc-50 text-ellipsis my-5 leading-7 '>I am an aspiring Go developer passionate about clean code and efficient software solutions. My interest in Golang stems from its simplicity, performance, and robust concurrency support. I have enhanced my skills through personal projects, open-source contributions, and continuous learning from the Go community. With a strong foundation in computer science and a knack for problem-solving, I thrive in challenging environments that require optimizing performance and building reliable systems. Outside of coding, I enjoy exploring new technologies, participating in coding competitions, and sharing knowledge through blogging and community meetups. I look forward to collaborating on impactful projects.
+  
+                </p>
 
-                <section className='flex justify-between text-2xl text-lime-400 mt-5 items-center  z-auto w-80 transition-colors'>
-                    <button className='inline-flex border-2 rounded-lg bg-transparent  justify-center transition duration-300 ease-in-out bg-blue-300 text-black hover:bg-blue-500 hover:text-white px-4 py-1 '>Hire Me</button>
-                    <button className='inline-flex  border-2 rounded-lg bg-transparent  justify-center tracking-wide px-4 py-1'>Let's Talk</button>
-                </section>
+                <div className='flex justify-evenly text-2xl text-lime-400 my-5 z-auto transition-colors'>
+                    <Link to={'/services'} className='inline-flex border-2 rounded-lg px-2 '>Hire Me</Link>
+                    <Link to={'/contact'} className='inline-flex  border-2 rounded-lg px-2 '>Let's Talk</Link>
+                </div>
             </div>
-            <div className=' md:w-1/2 pl-5'>
-                <img src="/src/assets/developer.png" alt="image" className='size-3/4' />
+            <div className=' flex flex-col items-center '>
+                <img src="/src/assets/developer.png" alt="image" className='size-9/10 mx-10'  />
             </div>
         </div>
     )
